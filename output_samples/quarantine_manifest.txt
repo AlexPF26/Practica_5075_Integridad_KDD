@@ -1,0 +1,25 @@
+====================================================================
+MANIFIESTO DE CUARENTENA - PIPELINE DE CALIDAD DE DATOS (KDD)
+Fecha de auditoria: 2026-11-12 20:26:59
+====================================================================
+
+[1] FICHEROS RECHAZADOS POR INTEGRIDAD SHA-256 (quarantine/tampered/)
+  - transacciones_tienda_este.csv -> Firma SHA-256 discrepante respecto a manifest_checksums.sha256
+  - transacciones_tienda_norte.csv -> Firma SHA-256 discrepante respecto a manifest_checksums.sha256
+  - transacciones_tienda_sur.csv -> Firma SHA-256 discrepante respecto a manifest_checksums.sha256
+
+[2] REGISTROS SEGREGADOS POR CALIDAD DE DATOS (quarantine/bad_records.csv) - Total: 14
+  - [transacciones_tienda_este.csv] ID: SIN_ID | Motivo: id_transaccion nulo
+  - [transacciones_tienda_este.csv] ID: SIN_ID | Motivo: id_transaccion nulo
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0034 | Motivo: importe_eur o unidades nulo
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0039 | Motivo: timestamp con formato corrupto
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0010 | Motivo: timestamp fuera del rango valido (2026)
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0022 | Motivo: timestamp fuera del rango valido (2026)
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0012 | Motivo: importe_eur <= 0
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0018 | Motivo: importe_eur <= 0
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0025 | Motivo: unidades < 1
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0042 | Motivo: unidades < 1
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0016 | Motivo: outlier importe_eur (> 137.88 EUR)
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0032 | Motivo: outlier importe_eur (> 137.88 EUR)
+  - [transacciones_tienda_este.csv] ID: TXE-20261110-0047 | Motivo: outlier importe_eur (> 137.88 EUR)
+  - [transacciones_tienda_sur.csv] ID: TXS-20261110-0005 | Motivo: outlier importe_eur (> 137.88 EUR)

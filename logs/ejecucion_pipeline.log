@@ -1,0 +1,20 @@
+2026-11-12 20:26:56 [INFO] [FASE-1] Iniciando validación criptográfica SHA-256 sobre lote: raw_batch_202611
+2026-11-12 20:26:56 [CRITICAL] [FASE-1] ALERTA DE INTEGRIDAD | transacciones_tienda_norte.csv -> Hash discrepante! Esperado: 34cc61612494... | Calculado: 963e44167aea... Aislado en quarantine\tampered/
+2026-11-12 20:26:56 [CRITICAL] [FASE-1] ALERTA DE INTEGRIDAD | transacciones_tienda_sur.csv -> Hash discrepante! Esperado: 0773c2cde0d4... | Calculado: 75751663064d... Aislado en quarantine\tampered/
+2026-11-12 20:26:56 [CRITICAL] [FASE-1] ALERTA DE INTEGRIDAD | transacciones_tienda_este.csv -> Hash discrepante! Esperado: 645e9de21d1f... | Calculado: 74061a5bd048... Aislado en quarantine\tampered/
+2026-11-12 20:26:56 [INFO] [FASE-1] Resumen Fase 1 -> Total evaluados: 3 | Aprobados (verified): 0 | Rechazados (tampered): 3
+2026-11-12 20:26:59 [INFO] [FASE-2/3] Iniciando saneamiento sobre 3 ficheros (150 registros brutos)
+2026-11-12 20:26:59 [WARNING] [FASE-2/3] Segregados 2 registros a cuarentena -> Motivo: id_transaccion nulo
+2026-11-12 20:26:59 [WARNING] [FASE-2/3] Segregados 1 registros a cuarentena -> Motivo: importe_eur o unidades nulo
+2026-11-12 20:26:59 [INFO] [FASE-2/3] Imputados 1 valores nulos en 'categoria' -> 'Desconocido'
+2026-11-12 20:26:59 [INFO] [FASE-2/3] Imputados 1 valores nulos en 'metodo_pago' -> 'No especificado'
+2026-11-12 20:26:59 [WARNING] [FASE-2/3] Segregados 1 registros a cuarentena -> Motivo: timestamp con formato corrupto
+2026-11-12 20:26:59 [WARNING] [FASE-2/3] Segregados 2 registros a cuarentena -> Motivo: timestamp fuera del rango valido (2026)
+2026-11-12 20:26:59 [WARNING] [FASE-2/3] Segregados 2 registros a cuarentena -> Motivo: importe_eur <= 0
+2026-11-12 20:26:59 [WARNING] [FASE-2/3] Segregados 2 registros a cuarentena -> Motivo: unidades < 1
+2026-11-12 20:26:59 [WARNING] [FASE-2/3] Segregados 4 registros a cuarentena -> Motivo: outlier importe_eur (> 137.88 EUR)
+2026-11-12 20:26:59 [INFO] [FASE-2/3] Registros defectuosos exportados en: C:\Users\EXPERTO\Documents\GitProyects\Practica_5075_Integridad_KDD\quarantine\bad_records.csv (14 registros)
+2026-11-12 20:26:59 [INFO] [FASE-2/3] Dataset KDD final exportado en: C:\Users\EXPERTO\Documents\GitProyects\Practica_5075_Integridad_KDD\processed\dataset_kdd_listo.csv (136 registros)
+2026-11-12 20:26:59 [INFO] [FASE-2/3] Metricas JSON exportadas en: C:\Users\EXPERTO\Documents\GitProyects\Practica_5075_Integridad_KDD\output_samples\metricas_perfilado.json
+2026-11-12 20:26:59 [INFO] [FASE-2/3] Manifiesto de cuarentena exportado en: C:\Users\EXPERTO\Documents\GitProyects\Practica_5075_Integridad_KDD\output_samples\quarantine_manifest.txt
+2026-11-12 20:26:59 [INFO] [FASE-2/3] Informe Markdown generado en: C:\Users\EXPERTO\Documents\GitProyects\Practica_5075_Integridad_KDD\reports\INFORME_CALIDAD_KDD.md

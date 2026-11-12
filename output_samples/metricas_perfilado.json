@@ -1,0 +1,46 @@
+{
+    "norma_referencia": "ISO/IEC 25012",
+    "fecha_generacion": "2026-11-12 20:26:59",
+    "integridad_criptografica": {
+        "total_ficheros_lote": 6,
+        "ficheros_aprobados": [
+            "transacciones_tienda_este.csv",
+            "transacciones_tienda_norte.csv",
+            "transacciones_tienda_sur.csv"
+        ],
+        "ficheros_rechazados": [
+            "transacciones_tienda_este.csv",
+            "transacciones_tienda_norte.csv",
+            "transacciones_tienda_sur.csv"
+        ],
+        "tasa_integridad_pct": 50.0
+    },
+    "completitud_datos": {
+        "registros_brutos_totales": 150,
+        "registros_brutos_sin_nulos": 145,
+        "tasa_completitud_bruta_pct": 96.67,
+        "registros_validos_finales": 136,
+        "registros_segregados_cuarentena": 14,
+        "registros_finales_sin_nulos": 136,
+        "tasa_completitud_final_pct": 100.0
+    },
+    "distribucion_importe_eur": {
+        "media": 71.92,
+        "mediana": 73.55,
+        "desviacion_estandar": 24.86,
+        "percentil_25": 56.63,
+        "percentil_75": 88.08,
+        "minimo": 12.5,
+        "maximo": 124.47,
+        "umbral_superior_iqr": 137.88
+    },
+    "desglose_cuarentena_por_motivo": {
+        "outlier importe_eur (> 137.88 EUR)": 4,
+        "id_transaccion nulo": 2,
+        "timestamp fuera del rango valido (2026)": 2,
+        "importe_eur <= 0": 2,
+        "unidades < 1": 2,
+        "importe_eur o unidades nulo": 1,
+        "timestamp con formato corrupto": 1
+    }
+}

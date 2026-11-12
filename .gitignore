@@ -1,0 +1,21 @@
+# Ignorar todo por defecto (lista blanca estricta)
+*
+
+# Permitir archivos base del repositorio
+!.gitignore
+!README.md
+
+# Permitir únicamente los directorios y archivos exigidos en la entrega
+!scripts/
+!scripts/01_verificar_integridad.py
+!scripts/02_pipeline_saneamiento.py
+
+!logs/
+!logs/ejecucion_pipeline.log
+
+!reports/
+!reports/INFORME_CALIDAD_KDD.md
+
+!output_samples/
+!output_samples/quarantine_manifest.txt
+!output_samples/metricas_perfilado.json
