@@ -19,3 +19,5 @@
 !output_samples/
 !output_samples/quarantine_manifest.txt
 !output_samples/metricas_perfilado.json
+
+!evidencias/
